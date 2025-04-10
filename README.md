@@ -75,7 +75,10 @@ Practical_20/
 
 ![image](https://github.com/user-attachments/assets/53d3f4f7-0e76-48e0-a288-d4f36bf29af3)
 
-![image](https://github.com/user-attachments/assets/e887d1aa-b9ac-46d0-84d1-154696dc78b4)
+![image](https://github.com/user-attachments/assets/e887d1aa-b9ac-46d0-84d1-154696dc78b4
+
+![image](https://github.com/user-attachments/assets/06578e92-065f-40d0-b666-2b5789cf390c)
+
 
 
 
