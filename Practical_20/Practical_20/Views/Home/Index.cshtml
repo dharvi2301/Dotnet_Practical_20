@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Practical_20.Models.User>
+
+@{
+    ViewData["Title"] = "User List";
+}
+
+<h2 class="mb-3">User List</h2>
+
+<a asp-action="Create" asp-controller="Home" method="post" class="btn btn-primary">Create New User</a>
+
+
+<table class="table table-bordered table-striped mt-3">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Logged Timestamp</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Name</td>
+                <td>@user.Timestamp.ToString("g")</td>
+            </tr>
+        }
+    </tbody>
+</table>
