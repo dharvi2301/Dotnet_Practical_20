@@ -9,7 +9,6 @@ namespace Practical_20.Data
             : base(options)
         {
         }
-
         public DbSet<User> Users { get; set; }
         public DbSet<AuditLog> AuditLogs { get; set; }
 

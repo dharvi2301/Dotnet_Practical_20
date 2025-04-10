@@ -43,4 +43,10 @@ public class HomeController : Controller
         }
         return View(user);
     }
+    public IActionResult TriggerError()
+    {
+        // This will throw a runtime exception and trigger the middleware
+        throw new Exception("Manual test exception for middleware logging.");
+    }
+
 }

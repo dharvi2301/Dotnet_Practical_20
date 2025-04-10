@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Practical_20.Data;
 using Practical_20.Interface;
+using Practical_20.Middleware;
 using Practical_20.Models;
 using Practical_20.Repository;
 using Practical_20.Repository_;
@@ -33,9 +34,9 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-//app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseRouting();
 

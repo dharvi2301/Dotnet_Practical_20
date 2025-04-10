@@ -42,15 +42,23 @@ namespace Practical_20.Middleware
 
         private async Task LogToDatabase(ApplicationDbContext dbContext, Exception ex)
         {
-            var log = new AuditLog
+            try
             {
-                Message = ex.Message,
-                Level = "Error",
-                Timestamp = DateTime.UtcNow
-            };
+                var log = new AuditLog
+                {
+                    Message = ex.Message,
+                    Level = "Error",
+                    Timestamp = DateTime.UtcNow
+                };
 
-            dbContext.AuditLogs.Add(log);
-            await dbContext.SaveChangesAsync();
+                dbContext.AuditLogs.Add(log);
+                _logger.LogInformation("Saving exception log to database...");
+                await dbContext.SaveChangesAsync();
+            }
+            catch (Exception dbEx)
+            {
+                _logger.LogError(dbEx, "Failed to save exception to database.");
+            }
         }
     }
 }
