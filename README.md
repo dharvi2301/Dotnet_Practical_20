@@ -64,6 +64,10 @@ Practical_20/
 ```
 ### 🧪 Global Exception Handling Test
 
-The error was triggered by breaking the DB connection string. The middleware caught the exception and logged it.
-![image](https://github.com/user-attachments/assets/20d518ce-c4b6-4b6b-ae3e-55c94751f7e7)
+![image](https://github.com/user-attachments/assets/b12081af-de75-4b59-9454-389960bc45dd)
+
+
+**Audit Log Table:**
+![image](https://github.com/user-attachments/assets/1d6a5a90-c8cb-4ef9-9628-bf55b8cdc601)
+
 
