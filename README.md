@@ -61,3 +61,9 @@ Practical_20/
 │
 ├── Program.cs
 └── appsettings.json
+```
+### 🧪 Global Exception Handling Test
+
+The error was triggered by breaking the DB connection string. The middleware caught the exception and logged it.
+![image](https://github.com/user-attachments/assets/20d518ce-c4b6-4b6b-ae3e-55c94751f7e7)
+
