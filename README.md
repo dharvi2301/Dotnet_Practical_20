@@ -14,7 +14,7 @@ This practical demonstrates the development of a structured **ASP.NET Core MVC**
 
 ## 🛠️ Technologies Used
 
-- ASP.NET Core MVC (.NET 6 or 7)
+- ASP.NET Core MVC (.NET 8)
 - Entity Framework Core
 - SQL Server or LocalDB
 - Serilog for logging to files
